@@ -49,7 +49,6 @@ int main(int argc, char** argv){
   cv::Mat in3[]= {zero_image,zero_image,dest_image[2]};
   cv::mixChannels( in3, 3, &result_red, 1, from_to1, 3);
 
-
   //Displaying the image along with extracted color channels
   cv::namedWindow ("Displaying Window", cv::WINDOW_AUTOSIZE);
   cv::imshow ("Displaying Window", image);
@@ -59,7 +58,6 @@ int main(int argc, char** argv){
   cv::imshow("Green Image",result_green);
   cv::namedWindow("Red Image",cv::WINDOW_AUTOSIZE);
   cv::imshow("Red Image",result_red);
-
 
   //Press any key to quit
   cv::waitKey(0);
